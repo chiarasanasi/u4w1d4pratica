@@ -1,4 +1,4 @@
-package Esercizio1;
+package Esercizio;
 
 public class Volontario implements SalaryEcheckIn {
     private String nome;

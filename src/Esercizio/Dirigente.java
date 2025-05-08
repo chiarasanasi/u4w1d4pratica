@@ -1,4 +1,4 @@
-package Esercizio1;
+package Esercizio;
 
 public class Dirigente extends Dipendente implements SalaryEcheckIn {
 
