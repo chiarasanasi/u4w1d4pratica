@@ -42,6 +42,6 @@ public class Volontario implements SalaryEcheckIn {
 
     @Override
     public String checkIn() {
-        return "Turno di volontariato è iniziato";
+        return "Turno di volontariato iniziato";
     }
 }

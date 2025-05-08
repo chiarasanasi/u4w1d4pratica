@@ -28,7 +28,15 @@ public class MainEsercizio1 {
         System.out.println("Totale stipendi : "+totaleStipendi);
 
         for (int i = 0; i < persone.length; i++) {
-            System.out.println("CheckIn --> " + persone[i].checkIn());
+            if (persone[i] instanceof Dipendente){
+                Dipendente d = (Dipendente) persone[i];
+                System.out.println("Dipendente con matricola " + d.getMatricola() + " : "+ ((SalaryEcheckIn) persone[i]).checkIn());
+            }else if(persone[i] instanceof Volontario){
+                Volontario v = (Volontario) persone[i];
+                System.out.println("Volontario " + v.getNome()  + " : " + v.checkIn());
+
+            }
+
 
         }
     }
